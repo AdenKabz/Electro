@@ -1,0 +1,46 @@
+{% extends 'starter.html' %}
+{% load static %}
+
+{% block title %}
+	Team
+{% endblock %}
+
+{% block body %}
+	
+    <section id="team" class="team section light-background">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Team</h2>
+    <p>Meet the dedicated professionals powering your electricity experience.</p>
+  </div>
+
+  <div class="container">
+
+    <div class="row gy-4">
+        
+
+      {% for member in team_members %}
+          
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member">
+          <div class="member-img">
+            <img src="{{ member.image.url }}" class="img-fluid" alt="">
+          </div>
+          <div class="member-info">
+            <h4>{{ member.name }}</h4>
+            <span>{{ member.title }}</span>
+          </div>
+        </div>
+      </div>
+        
+      {% endfor %}  
+
+      
+
+    </div>
+
+  </div>
+
+</section>
+    
+{% endblock %}

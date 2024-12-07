@@ -1,0 +1,16 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Send Notifications</h1>
+    <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form3.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Send Notification</button>
+        <a href="{% url 'notifications' %}" class="btn btn-warning">Show Notification</a>
+    </form>
+</div>
+{% endblock content %}

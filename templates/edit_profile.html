@@ -1,0 +1,15 @@
+{% extends 'customerbase.html' %}
+{% load static %}
+
+{% block content %}
+
+     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+        {% csrf_token %}
+
+         <h2>Edit Profile</h2>
+        {{ form4.as_p }}
+        <button type="submit">Save</button>
+       
+    </form>
+    
+{% endblock content %}

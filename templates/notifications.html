@@ -1,0 +1,17 @@
+{% extends 'customerbase.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Notifications</h1>
+    <table class="table table-info table-striped container table-hover p-5">
+        {% for notification in notify %}
+        <tr>
+        <td>{{notification.subject}}</td>
+        <td>{{notification.message}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock content %}

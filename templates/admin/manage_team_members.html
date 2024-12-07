@@ -1,0 +1,15 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+
+     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+        {% csrf_token %}
+
+         <h2>Add Team Member</h2>
+        {{ form1.as_p }}
+        <button type="submit">Upload</button>
+       <a href="{% url 'team' %}" class="btn btn-warning">Display Member</a>
+    </form>
+    
+{% endblock content %}

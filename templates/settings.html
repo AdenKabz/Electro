@@ -1,0 +1,12 @@
+{% extends 'customerbase.html' %}
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <h1>Settings</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Save Changes</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center" style="color: maroon;">Manage Contacts</h1>
+    <table class="table table-striped table-info container p-5 table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in allcontacts %}
+            <tr>
+                <td>{{ c.name }}</td>
+                <td>{{ c.email }}</td>
+                <td>{{ c.subject }}</td>
+                <td>{{ c.message }}</td>
+                <td>
+                    <a href="" class="btn btn-danger">Respond</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}

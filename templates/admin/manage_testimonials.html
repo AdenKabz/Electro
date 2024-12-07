@@ -1,0 +1,15 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+
+     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+        {% csrf_token %}
+
+         <h2>Add Testimonial</h2>
+        {{ form2.as_p }}
+        <button type="submit">Upload</button>
+        <a href="{% url 'testimonials' %}" class="btn btn-warning">Display Testimony</a>
+    </form>
+    
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1>Manage Meter Readings</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User</th>
+                <th>Meter ID</th>
+                <th>Reading</th>
+                <th>Timestamp</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for reading in meter_readings %}
+            <tr>
+                <td>{{ reading.id }}</td>
+                <td>{{ reading.user }}</td>
+                <td>{{ reading.meter_id }}</td>
+                <td>{{ reading.reading }}</td>
+                <td>{{ reading.timestamp }}</td>
+                <td>
+                    <a href="{% url 'edit_meter_reading' reading.id %}" class="btn btn-primary">Edit</a>
+                    <a href="{% url 'delete_meter_reading' reading.id %}" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
