@@ -49,7 +49,7 @@ def login(request):
 
 
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def dashboard(request):
     customer = Customer.objects.all()
     user_profile = UserProfile.objects.all()
@@ -57,7 +57,7 @@ def dashboard(request):
 
 
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def edit_profile(request):
    if request.method =="POST":
        customer_form = CustomerForm(request.POST, request.FILES)
@@ -107,7 +107,7 @@ def contact (request):
     else:
         return render(request, 'contact.html')
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def customerbase(request):
     if request.method == 'POST':
         if Customer.objects.filter(
@@ -122,23 +122,23 @@ def customerbase(request):
     else:
         return render(request, 'login.html')
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def recent_usage(request):
     return render(request, 'recent_usage.html')
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def payment_history(request):
     payments=Payment.objects.all()
     return render(request, 'payment_history.html', {'payments': payments})
 
 
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def notifications(request):
     notify=Notifications.objects.all()
     return render(request, 'notifications.html', {'notify': notify})
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def settings(request):
     return render(request, 'settings.html')
 
@@ -170,7 +170,7 @@ def settings(request):
     # })
 
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 # Profile Settings View
 def profile_settings(request):
     if request.method == 'POST':
@@ -209,7 +209,7 @@ def security_settings(request):
 
     return render(request, 'customerbase.html', {'security_form': security_form})
 
-@login_required (login_url='login')
+# @login_required (login_url='login')
 def delete_account(request):
     if request.method == 'POST':
         # Logic to delete the account (add actual logic here)
@@ -287,7 +287,7 @@ def stk(request):
 #     else:
 #         return render(request, 'admin/admin_login.html')
 
-@login_required
+# @login_required
 def adminbase(request):
     return render(request, 'admin/adminbase.html')
 
@@ -304,7 +304,7 @@ def admin_dashboard(request):
 # def admin_logout(request):
 #     return render(request, 'admin/admin_login.html')
 
-@login_required
+# @login_required
 def manage_users(request):
     allusers=Customer.objects.all()
     return render(request, 'admin/manage_users.html', {'allusers': allusers})
