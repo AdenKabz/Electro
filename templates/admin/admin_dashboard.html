@@ -1,7 +1,62 @@
 {% extends 'admin/adminbase.html' %}
+{% load static %}
+
 
 {% block content %}
+    <style>
+    .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+}
+</style>
+    <h1 class="text-center" style="color: maroon;">Stats</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Customers</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ customer_count }}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Contacts</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ contact_count }}</h5>
+                </div>
+            </div>
+        </div>
+        </div>
 
-   
-    
+    <div class="row">
+        <div class="col-md-6">
+             <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Team Members</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ team_count }}</h5>
+                </div>
+            </div>
+            </div>
+         <div class="col-md-6">
+             <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Testimonials</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ testimonial_count }}</h5>
+                </div>
+            </div>
+            </div>
+    </div>
+    <div class="col-md-6">
+             <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Total Notifications</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ notification_count }}</h5>
+                </div>
+            </div>
+            </div>
+</div>
 {% endblock content %}

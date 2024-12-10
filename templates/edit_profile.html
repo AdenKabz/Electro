@@ -3,12 +3,15 @@
 
 {% block content %}
 
-     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+    <h2 class="text-center" style="color: maroon;">Edit Profile</h2> 
+     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4 p-5">
         {% csrf_token %}
-
-         <h2>Edit Profile</h2>
-        {{ form4.as_p }}
-        <button type="submit">Save</button>
+         
+         {{ customer_form.as_p }}
+         {{ user_profile_form.as_p }}
+         
+        
+        <button type="submit" style="background-color: #150517; color: antiquewhite;">Save</button>
        
     </form>
     

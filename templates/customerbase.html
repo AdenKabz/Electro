@@ -19,7 +19,7 @@
 
     header {
       position: fixed;
-      background: #22242A;
+      background: #2c0b0e;
       padding: 20px;
       width: 100%;
       z-index: 1;
@@ -58,7 +58,7 @@
     }
 
     .sidebar {
-      background: #2f323a;
+      background: #2c0b0e; 
       margin-top: 70px;
       padding-top: 30px;
       position: fixed;
@@ -180,7 +180,6 @@
     <img src="{% static 'assets/img/user_profile.png' %}" class="profile_image" alt="Profile Picture" id="profile-image">
   </label>
   <input type="file" id="profile-image-upload" accept="image/*" style="display: none;">
-        
 
     </center>
 
@@ -190,7 +189,6 @@
       <a href="{% url 'notifications' %}"><i class="fas fa-bell"></i><span>Notifications</span></a>
       <a href="{% url 'settings' %}"><i class="fas fa-cog"></i><span>Settings</span></a>
       <a href="{% url 'pay' %}"><i class="fas fa-bolt"></i><span>Buy Electricity</span></a>
-        <a href=""><i class="fas fa-headset"></i><span>Customer Support</span></a>
   </div>
   <!--sidebar end-->
 

@@ -23,7 +23,7 @@
 
     header {
       position: fixed;
-      background: #22242A;
+      background: #2c0b0e;
       padding: 20px;
       width: 100%;
       z-index: 1;
@@ -62,7 +62,7 @@
     }
 
     .sidebar {
-      background: #2f323a;
+      background: #2c0b0e;
       margin-top: 70px;
       padding-top: 30px;
       position: fixed;
@@ -71,6 +71,7 @@
       height: 100%;
       transition: 0.5s;
       transition-property: left;
+        overflow-y: visible;
     }
 
     .sidebar .profile_image {
@@ -175,7 +176,6 @@
         <a href="{% url 'admin_dashboard' %}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
         <a href="{% url 'manage_users' %}"><i class="fas fa-users"></i><span>Manage Users</span></a>
         <a href="{% url 'manage_contacts' %}"><i class="fas fa-money-bill-wave"></i><span>Manage Contacts</span></a>
-        <a href=""><i class="fas fa-chart-line"></i><span>Manage Meter Readings</span></a>
         <a href="{% url 'add_member' %}"><i class="fas fa-users-cog"></i><span>Manage Team Members</span></a>
         <a href="{% url 'add_testimonial' %}"><i class="fas fa-comments"></i><span>Manage Testimonials</span></a>
         <a href="{% url 'send_notifications' %}"><i class="fas fa-bell"></i><span>Send Notifications</span></a>
@@ -191,7 +191,6 @@
     
      <br><br><br>
     </div>
-
 
 </body>
 </html>

@@ -1,192 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'starter.html' %}
+{% load static %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Valera Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+{% block title %}
+	Service Details
+{% endblock %}
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+{% block body %}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Valera
-  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="service-details-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Valera</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
+    <section id="reliable-power">
+    <div class="container rounded-5" style="background-image: url('{% static 'assets/img/background7.jpg' %}'); color: white; background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-center" style="color: burlywood"><b><i>Reliable Power Supply: The Electro Advantage</i></b></h1>
+        <h2 style="color: burlywood"><b>Experience Uninterrupted Power</b></h2>
+        <p><span>At Electro, we understand the importance of reliable power supply. That's why we're committed to providing a consistent and uninterrupted electricity service.</span></p>
+        
+        <h2 style="color: burlywood"><b>Key Features of Our Reliable Power Supply:</b></h2>
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+            <li><strong>Advanced Grid Infrastructure:</strong> Our state-of-the-art grid infrastructure is designed to minimize outages and ensure a seamless power supply.</li>
+            <li><strong>24/7 Monitoring:</strong> Our dedicated team monitors the grid around the clock to identify and resolve potential issues promptly.</li>
+            <li><strong>Rapid Response:</strong> In the event of a power outage, our skilled technicians are ready to respond quickly and efficiently.</li>
+            <li><strong>Regular Maintenance:</strong> We prioritize regular maintenance and upgrades to ensure optimal performance.</li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+        <h2 style="color: burlywood"><b>Why Choose Electro for Reliable Power?</b></h2>
+        <ul>
+            <li><strong>Enhanced Productivity:</strong> Uninterrupted power keeps your business running smoothly and boosts productivity.</li>
+            <li><strong>Reduced Downtime:</strong> Minimize disruptions to your operations and avoid costly downtime.</li>
+            <li><strong>Peace of Mind:</strong> Enjoy the peace of mind that comes with a reliable power supply.</li>
+            <li><strong>Environmental Responsibility:</strong> Our focus on sustainable energy practices helps reduce your carbon footprint.</li>
+        </ul>
+        <h2 style="color: burlywood"><b>Experience the Electro Difference</b></h2>
+        <p><span>Choose Electro for a reliable and efficient power supply. Contact us today to learn more about our services and how we can meet your specific energy needs.</span></p>
     </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background">
-      <div class="container position-relative">
-        <h1>Service Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
-            </div>
-
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
-          </div>
-
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Service Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Valera</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Valera</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
+    </section>
+    
+    <section id="smart-metering">
+    <div class="container rounded-5" style="background-image: url('{% static 'assets/img/background7.jpg' %}'); color: white; background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-center" style="color: burlywood"><b><i>Smart Metering: Revolutionizing Energy Management</i></b></h1>
+        <h2 style="color: burlywood"><b>Empower Your Home with Smart Metering</b></h2>
+        <p><span>Smart metering is revolutionizing the way we consume and manage energy. With our advanced smart metering technology, you can take control of your energy usage and make informed decisions.</span></p>
+        
+        <h2 style="color: burlywood"><b>Key Benefits of Smart Metering:</b></h2>
+        <ul>
+            <li><strong>Real-Time Monitoring:</strong> Track your energy consumption in real-time through our user-friendly online portal or mobile app.</li>
+            <li><strong>Time-of-Use Pricing:</strong> Optimize your energy usage by taking advantage of time-of-use pricing plans.</li>
+            <li><strong>Remote Control:</strong> Control your energy usage remotely, even when you're away from home.</li>
+            <li><strong>Enhanced Energy Efficiency:</strong> Gain valuable insights into your energy consumption patterns to identify areas for improvement.</li>
+            <li><strong>Simplified Billing:</strong> Receive accurate and timely billing statements, eliminating the need for manual meter readings.</li>
+        </ul>
+        <h2 style="color: burlywood"><b>How Smart Metering Works:</b></h2>
+        <ol>
+            <li><strong>Installation:</strong> Our certified technicians will install a smart meter at your property.</li>
+            <li><strong>Data Collection:</strong> The smart meter collects data on your energy usage and transmits it securely to our system.</li>
+            <li><strong>Real-time Monitoring:</strong> You can access your energy usage data through our online portal or mobile app.</li>
+            <li><strong>Informed Decisions:</strong> Use the data to make informed decisions about your energy consumption and identify areas for savings.</li>
+        </ol>
+        <h2 style="color: burlywood"><b>Experience the Future of Energy Management</b></h2>
+        <p><span>Upgrade to smart metering today and take control of your energy future. Contact us to learn more about our smart metering solutions and how they can benefit you.</span></p>
     </div>
-  </footer>
+    </section>
+    
+    <section id="online-payment">
+    <div class="container rounded-5" style="background-image: url('{% static 'assets/img/background7.jpg' %}'); color: white; background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-center" style="color: burlywood"><b><i>Online Payment: Easy and Secure</i></b></h1>
+        <h2 style="color: burlywood"><b>Pay Your Bills, Your Way</b></h2>
+        <p><span>At Electro, we've made it easier than ever to manage your electricity payments. Our online payment portal offers a secure and convenient way to pay your bills, anytime, anywhere.</span></p>
+        
+        <h2 style="color: burlywood"><b>Why Choose Our Online Payment Portal?</b></h2>
+        <ul>
+            <li><strong>24/7 Accessibility:</strong> Pay your bills at your convenience, round-the-clock.</li>
+            <li><strong>Multiple Payment Options:</strong> Choose from a variety of payment methods, including credit cards, debit cards, and net banking.</li>
+            <li><strong>Secure Transactions:</strong> Rest assured that your payment information is safe and secure with our advanced encryption technology.</li>
+            <li><strong>Easy-to-Use Interface:</strong> Our user-friendly portal makes it simple to navigate and complete your payments quickly.</li>
+            <li><strong>Real-time Updates:</strong> Track your payment history and view your current balance in real-time.</li>
+        </ul>
+        <h2 style="color: burlywood"><b>How to Make an Online Payment:</b></h2>
+        <ol>
+            <li><strong>Log In:</strong> Sign in to your customer account using your credentials.</li>
+            <li><strong>View Bill:</strong> Check your outstanding balance and due date.</li>
+            <li><strong>Select Payment Method:</strong> Choose your preferred payment method.</li>
+            <li><strong>Enter Payment Details:</strong> Provide the necessary payment information.</li>
+            <li><strong>Confirm Payment:</strong> Review your payment details and confirm the transaction.</li>
+        </ol>
+        <h2 style="color: burlywood"><b>Experience the Convenience of Online Payments</b></h2>
+        <p><span>Simplify your life and pay your electricity bills hassle-free. Sign up for our online payment portal today and enjoy the benefits of a secure and efficient payment experience.</span></p>
+    </div>
+    </section>
+    
+    <section id="customer-support">
+    <div class="container rounded-5" style="background-image: url('{% static 'assets/img/background7.jpg' %}'); color: white; background-repeat: no-repeat; background-size: cover;">
+       <h1 class="text-center" style="color: burlywood"><b><i>24/7 Customer Support: Always at Your Service</i></b></h1>
+        <p><span>At Electro, we're committed to providing exceptional customer service. Our dedicated support team is available 24/7 to assist you with any questions, concerns, or issues you may have.</span></p>
+        
+        <h2 style="color: burlywood"><b>Why Choose Our Customer Support?</b></h2>
+        <ul>
+            <li><strong>Prompt Response:</strong> We understand the importance of timely assistance. Our team strives to respond to your inquiries promptly.</li>
+            <li><strong>Expert Assistance:</strong> Our knowledgeable support agents are trained to provide accurate and efficient solutions.</li>
+            <li><strong>Multiple Channels:</strong> Contact us through your preferred channel, including phone, email, or live chat.</li>
+            <li><strong>Personalized Support:</strong> We tailor our support to your specific needs, ensuring a personalized experience.</li>
+        </ul>
+        <h2 style="color: burlywood"><b>How to Contact Us:</b></h2>
+        <ul>
+            <li><strong>Phone:</strong> <a href="Tel: +254748292634">+254748292634</a></li>
+            <li><strong>Email:</strong> <a href="Mailto: electro@gmail.com"></a>electro@gmail.com</li>
+            <li><strong>Live Chat:</strong> Visit our website and start a live chat session with a support agent.</li>
+        </ul>
+        <h2 style="color: burlywood"><b>Experience the Electro Difference</b></h2>
+        <p><span>With our 24/7 customer support, you can rest assured that we're always here to help.</span></p>
+    </div>
+    </section>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+{% endblock %}

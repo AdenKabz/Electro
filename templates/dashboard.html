@@ -5,18 +5,25 @@
 {% block content %}
 
     <div class="page-header">
-    <h1 class="text-center">Your Profile</h1>
+    <h1 class="text-center" style="color: maroon;">Your Profile</h1>
     </div>
     
     <div class="container">
     
-        {% for p in prof %}
-            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div>
-                    <img src="{{ p.image.url }}" alt="">
-                </div>
-            </div>
-        {% endfor %}
+        <h1>Welcome, {{ customer.name }}</h1>
+
+<p>Email: {{ customer.email }}</p>
+<p>Username: {{ customer.username }}</p>
+
+{% if user_profile %}
+    <p>Phone Number: {{ user_profile.phone_number }}</p>
+    <p>Address: {{ user_profile.address }}</p>
+    <p>Meter Number: {{ user_profile.meter_number }}</p>
+    <p><img src="{{ user_profile.profile_pic.url }}" alt="Profile Picture"></p>
+{% endif %}
+
+<a href="{% url 'edit_profile' %}">Edit Profile</a>
+<p class="text-center mt-5">Encountering any issues. <a href="{% url 'contact' %}">Reach-out</a></p>
     
     </div>
     

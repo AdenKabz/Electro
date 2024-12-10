@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('starter/', views.starter, name='starter'),
+    path('services/', views.services, name='services'),
     path('about/', views.about, name='about'),
     path('testimonials/', views.testimonials, name='testimonials'),
     path('team/', views.team, name='team'),
@@ -29,13 +30,18 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('edit_profile/', views.edit_profile, name='edit_profile'),
     path('signup/', views.signup, name='signup'),
-    path('login/', views.login, name='login'),
+    path('login/', views.login, name='login'),  # Pointing to your custom login view
     path('contact/', views.contact, name='contact'),
     path('customerbase/', views.customerbase, name='customerbase'),
     path('recent_usage/', views.recent_usage, name='recent_usage'),
     path('payment_history/', views.payment_history, name='payment_history'),
     path('notifications/', views.notifications, name='notifications'),
     path('settings/', views.settings, name='settings'),
+    path('profile-settings/', views.profile_settings, name='profile_settings'),
+    path('notification-settings/', views.notification_settings, name='notification_settings'),
+    path('security-settings/', views.security_settings, name='security_settings'),
+    path('delete_account/', views.delete_account, name='delete_account'),
+    path('some-error-page/', views.some_error_page, name='some_error_page'),
 
 #Mpesa api urls
     path('pay/', views.pay, name='pay'),
@@ -43,9 +49,9 @@ urlpatterns = [
     path('token/', views.token, name='token'),
 
     #admin urls
-    path('admin_login/', views.admin_login, name='admin_login'),
+    #path('admin_login/', views.admin_login, name='admin_login'),
     path('adminbase/', views.adminbase, name='adminbase'),
-    path('admin_logout/', views.admin_logout, name='admin_logout'),
+    #path('admin_logout/', views.admin_logout, name='admin_logout'),
     path('manage_users/', views.manage_users, name='manage_users'),
     path('delete1/<int:id>', views.delete_user),
     path('teammembers/', views.add_member, name='add_member'),
@@ -53,4 +59,5 @@ urlpatterns = [
     path('send_notifications/', views.send_notifications, name='send_notifications'),
     path('manage_contacts/', views.manage_contacts, name='manage_contacts'),
     path('admin_dashboard/', views.admin_dashboard, name='admin_dashboard'),
+    path('respond/<int:contact_id>', views.respond, name='respond'),
 ]

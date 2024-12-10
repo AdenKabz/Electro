@@ -1,0 +1,15 @@
+{% extends 'admin/adminbase.html' %}
+{% load static %}
+
+{% block content %}
+    
+    <h1>Respond to Contact</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="response_message" rows="10" cols="50" placeholder="Enter your response message"></textarea>
+        <br>
+        <button type="submit">Send Response</button>
+    </form>
+
+{% endblock content %}

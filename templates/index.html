@@ -84,7 +84,7 @@
       <ul>
         <li><a href="{% url 'index' %}" class="active">Home</a></li>
         <li><a href="{% url 'about' %}">About</a></li>
-        <li><a href="#featured-services">Services</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
         <li><a href="{% url 'team' %}">Team</a></li>
         <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
         <li><a href="{% url 'faq' %}">FAQ</a></li>
@@ -131,7 +131,7 @@
             <img src="{% static 'assets/img/reliable_power.jpg' %}" class="img-fluid" alt="">
           </div>
           <div class="details">
-            <a href="service-details.html" class="stretched-link">
+            <a href="{% url 'services' %}" class="stretched-link">
               <h3>Reliable Power Supply</h3>
             </a>
             <p>Experience uninterrupted power delivery, optimized for your needs.</p>
@@ -145,7 +145,7 @@
             <img src="{% static 'assets/img/smart_metering.jpg' %}" class="img-fluid" alt="" style="height:350px; width:700px;">
           </div>
           <div class="details">
-            <a href="service-details.html" class="stretched-link">
+            <a href="{% url 'services' %}" class="stretched-link">
               <h3>Smart Metering</h3>
             </a>
             <p>Monitor your energy consumption in real-time and make informed decisions.</p>
@@ -159,7 +159,7 @@
             <img src="{% static 'assets/img/online_payment.jpg' %}" class="img-fluid" alt="">
           </div>
           <div class="details">
-            <a href="service-details.html" class="stretched-link">
+            <a href="{% url 'services' %}" class="stretched-link">
               <h3>Online Payment</h3>
             </a>
             <p>Conveniently pay your electricity bills online, anytime, anywhere.</p>
@@ -173,7 +173,7 @@
             <img src="{% static 'assets/img/customer_help.jpg' %}" class="img-fluid" alt="">
           </div>
           <div class="details">
-            <a href="service-details.html" class="stretched-link">
+            <a href="{% url 'services' %}" class="stretched-link">
               <h3>24/7 Customer Support</h3>
             </a>
             <p>Our dedicated support team is available to assist you around the clock.</p>

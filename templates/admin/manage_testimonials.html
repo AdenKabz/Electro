@@ -3,13 +3,14 @@
 
 {% block content %}
 
-     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4">
+     <form method="post" enctype="multipart/form-data" class="text-center d-block m-auto mb-4 p-5">
         {% csrf_token %}
 
-         <h2>Add Testimonial</h2>
+         <h1 style="color: maroon">Add Testimonial</h1>
+         <br>
         {{ form2.as_p }}
         <button type="submit">Upload</button>
-        <a href="{% url 'testimonials' %}" class="btn btn-warning">Display Testimony</a>
+        <a href="{% url 'testimonials' %}" class="btn btn-warning">Display Testimonies</a>
     </form>
     
 {% endblock content %}
